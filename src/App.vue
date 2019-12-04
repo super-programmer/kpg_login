@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <LoginDialog @loginSuccess="loginSuccess" @loginClose="loginClose"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LoginDialog from './components/Login';
 
 export default {
-  name: 'app',
+  name: 'Login',
+  methods:{
+    /*登录成功*/
+    loginSuccess(){
+      this.$emit('loginSuccess');
+      this.loginClose();
+    },
+    /*关闭*/
+    loginClose(){
+      this.$emit('loginClose')
+    },
+  },
   components: {
-    HelloWorld
+    LoginDialog,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

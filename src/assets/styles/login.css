@@ -1,0 +1,28 @@
+html,body{position:relative;height:100%;font-size: 10vw !important;font-family:PingFang SC;background:#fff;margin:0;padding:0;}
+/*兼容pad*/
+@media screen and (min-width:600px){
+    html,body{font-size: 6vw !important;}
+}
+/*登录*/
+.m-model{position:absolute;top:0;bottom:0;left:0;right:0;background: rgba(0,0,0,0.7);}
+.m-login{position:absolute;top:50%;left:50%;margin:-375px 0 0 -327px;width:654px;height:750px;padding:40px;background:#fff;border-radius: 20px;box-sizing:border-box;}
+.m-login .cubeic-close{position:absolute;top:48px;right:48px;font-size:24px;color:#444;}
+.m-login-hd__tit{margin:40px 0 20px 0;font-size:46px;font-weight:bold;color:#444;}
+.m-login-hd__tips{line-height:30px;font-size:26px;color:#999;}
+.m-login__phone{display:flex;position:relative;align-items:center;height:90px;margin:40px 0 26px 0;}
+.m-login__phone input{width:100%;text-indent:160px;height:90px;line-height:90px;font-size:30px;outline:none;border:none;background:#fff;border-bottom:1Px solid #f0f0f0;}
+.m-login__phone--left{position:absolute;bottom:0;left:0;width:160px;line-height:90px;padding-left:22px;font-size: 30px;color:#3B93FF;box-sizing: border-box;}
+.m-login__code{display:flex;align-items:center;height:90px;}
+.m-login__code input{width:330px;height:90px;line-height:90px;font-size:30px;border:none;border-bottom:1Px solid #f0f0f0;outline:none;background:none;}
+.m-login__code input::placeholder,
+.m-login__phone input::placeholder{color:#999;}
+.m-login__code input,
+.m-login__phone input{color:#3B93FF;}
+.m-login__code input:focus,
+.m-login__phone input:focus{border-color: #3B93FF;color:#3B93FF;}
+.m-login__validate {display: flex; position:absolute; line-height: 1; margin-top: 12px; font-size: 28px; color: #FF3356; align-items: center;}
+.m-login__phone--button{display:flex;align-items:center;justify-content:center;width:220px;height:74px;margin-left:24px;font-size:26px;color:#999;background:#fff;border-radius:74px;outline:none;border: 1Px #ccc solid;}
+.m-login__phone--button--active{color:#3B93FF;border-color:#3B93FF;}
+.m-login-ft{padding:80px 0 0 0;}
+.m-login-ft__button{display:flex;align-items:center;justify-content:center;width:100%;height:88px;text-align:center;border:none;outline:none;font-size:36px;color:#fff;background:#ccc;border-radius:88px;}
+.m-login-ft__button--active{color:#fff;border-color:#3B93FF;background:#3B93FF;}
